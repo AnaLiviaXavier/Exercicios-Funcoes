@@ -56,7 +56,7 @@
 // 2.d)
     TamanhoEUpper = function(texto){
         
-        return array = [texto.length, texto.toUpperCase()]
+        return texto.length+ ' - '+  texto.toUpperCase()
     }
     console.log('2.d) ', TamanhoEUpper('abcde fgh ijk'))
 
