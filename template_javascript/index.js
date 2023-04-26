@@ -13,6 +13,7 @@
 // 2.c) iii. false
 
 
+
 // exercicios de escrita de código
 // 1.a) 
 
