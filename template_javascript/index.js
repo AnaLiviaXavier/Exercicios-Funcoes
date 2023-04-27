@@ -17,18 +17,18 @@
 // exercicios de escrita de código
 // 1.a) 
 
-   imprimeFrase = () => {
-        console.log('1.a) Eu sou Ana, tenho 18 anos, moro em São Leopoldo e sou estudante.')
+   imprimeFrase = (text) => {
+        return text
     }
-    imprimeFrase()
+    console.log(imprimeFrase('1.a) Eu sou Ana, tenho 18 anos, moro em São Leopoldo e sou estudante!!!'))
 
 // 1.b)
 
     imprimeFrase2 = function(nome,idade,cidade,profissao){
-        console.log(`1.b) Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}. `)
+        return `1.b) Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}. `
 
     }
-    imprimeFrase2('Joãozinho', 30, 'Porto Alegre', 'Bombeiro')
+    console.log(imprimeFrase2('Fulaninho', 30, 'Porto Alegre', 'Bombeiro'))
 
 // 2.a)
 
@@ -41,16 +41,16 @@
 
 // 2.b) 
     informaMaior = function(){
-        n1 =prompt('2.b) Digite o primeiro numero:')
-        n2 = prompt('2.b) Digite o segundo numero')
+        n1 = prompt('2.b) Digite o primeiro numero:')
+        n2 = prompt('2.b) Digite o segundo numero:')
         return n1>=n2
     }
    console.log('2.b) ', informaMaior())
 
 //  2.c)
-    informaPar = ()=> {
+    informaPar = () => {
         numero = prompt('2.c) Digite um número: ')
-        return numero % 2 ==0
+        return numero % 2 == 0
     }
     console.log('2.c) ', informaPar())
 
@@ -86,7 +86,7 @@
         '\n Adição: '+ somar(A,B)+
         '\n Subtração: '+subtrair(A,B)+
         '\n Multiplicação: ',multiplicar(A,B),
-        '\n Divisão: ',dividir(A,B)
+        '\n Divisão: ',(dividir(A,B).toFixed(2))
 
     )
 
