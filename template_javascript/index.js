@@ -93,17 +93,23 @@
     // desafios
 
 //  1.a) 
-    imprimeParametro = (z) => {
-        console.log(z)
-    }
+    
     
 //  1.b)
-    recebeValores = (c,d)=>{
-        f = c + d
-        imprimeParametro(f)
+    recebeValores = (c,q)=>{
+        console.log('1.b) TESTANDO - Parametros: '+c+' '+q)
+        outraSoma = c + q
+        console.log('1.b) Soma funciona? '+ outraSoma)
+        imprimeParametro(outraSoma)
+        imprimeParametro = (conteudo) => {
+            alert(conteudo)
+            return conteudo
+        
+        }
     }
-console.log('Desafio 1: ')
-    recebeValores(2,3)
+
+console.log(recebeValores(3,9))
+    
 
 //  2)
     teoremaPitagoras = function(c1, c2){
